@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title></title>
+</head>
+<body>
+	<script>
+	var hasCash = true;
+	var cashAmount = 15;
+	var hasDebitCard = true;
+	var debitCardAmount = 500;
+
+	var total = 20; // сумма к оплате
+
+	if ((hasCash && cashAmount >= total) || (hasDebitCard && debitCardAmount >= total)) {
+		alert('Can buy goods!');
+	} else {
+		alert('Sorry, you cannot buy goods...');
+	}
+	</script>
+</body>
+</html>
